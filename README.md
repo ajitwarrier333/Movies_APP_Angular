@@ -1,3 +1,5 @@
+# Movies_APP_Angular
+This is the github repository for my first Angular Project.
 # MoviesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
