@@ -1,15 +1,8 @@
-<h1>{{title | uppercase}}</h1>
+<!-- Navbar -->
+<app-navbar></app-navbar>
 
-<h1>Today: {{today | date: 'dd/MM/yyyy'}}</h1>
+<!-- Application Content -->
+<app-home></app-home>
 
-<p>
-    image URL: {{imageURL | lowercase}}
-</p>
-
-<p>
-    Price: {{price | currency}}    
-</p>
-
-<span>
-    Selling Price: {{sellingPrice | currency}}, profit: {{sellingPrice | profit | currency}}
-</span>
+<!-- Footer -->
+<app-footer></app-footer>
