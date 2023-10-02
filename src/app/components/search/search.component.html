@@ -1,1 +1,61 @@
-<p>search works!</p>
+<h1>Results for the {{movieTitle}}</h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cover</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+            <img src="../../../assets/images/jawan_img_search.jpg" alt="jawan_img_search">
+        </td>
+        <td>Jawan</td>
+        <td>Jawan is a 2023 Indian Hindi-language action thriller film co-written and directed by Atlee as his first Hindi film. It is produced by Gauri Khan and Gaurav Verma under Red Chillies Entertainment. The film stars Shah Rukh Khan in a dual role as father and son doppelgängers who team up to rectify corruption in society. Nayanthara, Vijay Sethupathi, Deepika Padukone (billed as a special appearance), Priyamani and Sanya Malhotra appear in supporting roles.</td>
+        <td>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-film"></i> Trailer</a>
+            <a class="btn btn-primary"><i class="bi bi-eye"></i> Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+            <img src="../../../assets/images/oppenheimer_img_search.jpg" alt="oppenheimer_img_search">
+        </td>
+        <td>Oppenheimer</td>
+        <td>Oppenheimer is a 2023 biographical film written and directed by Christopher Nolan and starring Cillian Murphy as J. Robert Oppenheimer, the American theoretical physicist credited with being the "father of the atomic bomb" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons. Based on the 2005 biography American Prometheus by Kai Bird and Martin J. Sherwin, the film chronicles the career of Oppenheimer, with the story predominantly focusing on his studies, his direction of the Manhattan Project during World War II, and his eventual fall from grace due to his 1954 security hearing. In addition to Murphy, the film stars Emily Blunt as Oppenheimer's wife "Kitty", Matt Damon as head of the Manhattan Project Leslie Groves, Robert Downey Jr. as U.S. Atomic Energy Commission member Lewis Strauss, and Florence Pugh as Oppenheimer's communist lover Jean Tatlock. The ensemble supporting cast includes Josh Hartnett, Casey Affleck, Rami Malek, and Kenneth Branagh.</td>
+        <td>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-film"></i> Trailer</a>
+            <a class="btn btn-primary"><i class="bi bi-eye"></i> Details</a>
+        </td>
+    </tr>      
+    </tbody>
+  </table>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/COv52Qyctws?si=qfkeMO_oH9cETLNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        <div class="modal-footer justify-content-center">
+            <b>{{movieTitle}}</b>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
