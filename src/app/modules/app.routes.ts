@@ -15,6 +15,17 @@ const routes: Routes = [
     {path:'details/actors/:id', component: AppDetailsActorsComponent},
     {path:'details/movies/:id', component: DetailsMoviesComponent},
     {path:'details/reviews/:id', component: DetailsReviewsComponent},
+
+    // Start Nested Routes
+    // {path:'details/:id', component: DetailsComponent},
+
+    // End Nested Routes
+    // {path:'details/:id', component: DetailsComponent, children:[
+    //     {path:'actors', component:AppDetailsActorsComponent},
+    //     {path:'movies', component:DetailsMoviesComponent},
+    //     {path:'reviews', component:DetailsReviewsComponent}
+    // ]},
+
     {path:'search/:movieTitle', component: SearchComponent},
     // {path:'feedback', component: FeedbackComponent}
 
